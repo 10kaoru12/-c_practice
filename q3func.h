@@ -1,0 +1,1 @@
+int prime_num(int);

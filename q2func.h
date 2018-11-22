@@ -1,0 +1,1 @@
+int co_num(int, int);
