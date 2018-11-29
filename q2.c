@@ -1,12 +1,30 @@
 #include <stdio.h>
-#include "q2func.h"
+
+void fct(void)
+{
+    int x;
+    printf("%p\n", &x);
+}
+
+void fct2(void)
+{
+    int y;
+    printf("%p\n", &y);
+}
 
 int main(void)
 {
-    int num1;
-    int num2;
-    scanf("%d", &num1);
-    scanf("%d", &num2);
-    printf("最大公約数は：%d\n", co_num(num1, num2));
+    fct();
+    fct2();
+
     return 0;
 }
+
+/* 
+出力結果が
+0x7ffee5edb31c
+0x7ffee5edb31c
+となった理由としては、
+関数fctの変数xがfctが終了した時に解放され、
+fct2で確保されたyの確保領域がxと同じだったため。 
+*/

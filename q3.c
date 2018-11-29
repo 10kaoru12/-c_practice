@@ -1,11 +1,15 @@
 #include <stdio.h>
-#include <stdbool.h>
-#include "q3func.h"
-
 int main(void)
 {
-    int num;
-    scanf("%d", &num);
-    printf("素数ならば1,素数でなければ0：%d\n", prime_num(num));
+    int x = 123;
+    int *ptr;
+    printf("%p\n", &x);
+    ptr = &x;
+    printf("%p\n", ptr);
+    printf("%d\n", *ptr);
+
     return 0;
 }
+
+/* int型ポインタ変数のptrに変数xのアドレスを代入され、
+９行目の参照演算子＊でポインタ変数ptrに入っているxのアドレスに間接参照して出力した。 */
