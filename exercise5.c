@@ -14,3 +14,4 @@ int com(int a, int b)
 {
     return b = pow(a, 2);
 }
+

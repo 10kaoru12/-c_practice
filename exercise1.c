@@ -2,8 +2,7 @@
 void prnum(int *x);
 int main(void)
 {
-    int num;
-    scanf("%d", &num);
+    int num = 10;
     prnum(&num);
 
     return 0;

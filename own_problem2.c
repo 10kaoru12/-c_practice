@@ -15,7 +15,7 @@ int main(void)
 {
     int *v = NULL;
     int size = 5;
-    int value = 100;
+    int value = 10;
 
     allocate(&v, size, value);
     for (int i = 0; i < size; i++)
