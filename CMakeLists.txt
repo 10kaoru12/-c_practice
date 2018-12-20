@@ -1,0 +1,5 @@
+cmake_minimum_required()
+add_executable(exercise1 exercise1.c)
+add_executable(exercise2 exercise2.c)
+add_executable(exercise3 exercise3.c)
+add_executable(exercise4 exercise4.c)
