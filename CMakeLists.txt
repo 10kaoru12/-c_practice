@@ -1,7 +1,0 @@
-cmake_minimum_required()
-add_executable(exercise1.c)
-add_executable(exercise2.c)
-add_executable(exercise3.c)
-add_executable(exercise4.c)
-add_executable(own_problem1.c)
-add_executable(own_problem2.c)
