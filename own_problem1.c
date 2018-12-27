@@ -1,15 +1,12 @@
 #include <stdio.h>
 typedef struct Person
 {
-    char name;
     int ages;
     int height;
     int weight;
 } Person;
 void input(Person *pperson)
 {
-    printf("名前は\n");
-    scanf("%s", &pperson->name);
     printf("年齢は\n");
     scanf("%d", &pperson->ages);
     printf("身長は\n");
@@ -20,10 +17,9 @@ void input(Person *pperson)
 }
 void output(Person pperson)
 {
-    printf("%s", pperson.name);
-    printf("%d", pperson.ages);
-    printf("%d", pperson.height);
-    printf("%d", pperson.weight);
+    printf("%d\n", pperson.ages);
+    printf("%d\n", pperson.height);
+    printf("%d\n", pperson.weight);
 }
 int main(void)
 {
