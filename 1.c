@@ -15,11 +15,9 @@ char *char_element3(char *str, char c)
 int main(void)
 {
     char *string;
-    char *ans;
     char c;
     string = "ABCdefeg";
     c = 'e';
-    ans = char_element3(string, c);
-    printf("%p", ans);
+    printf("%p\n", char_element3(string, c));
     return 0;
 }
