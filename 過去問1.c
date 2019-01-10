@@ -2,7 +2,7 @@
 char *char_element3(char *str, char c)
 {
     char *pc;
-    while (*str != '\0')
+    while (*str == '\0')
     {
         if (*str == c)
         {
