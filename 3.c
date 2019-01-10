@@ -16,11 +16,7 @@ void mqr(numInfo *x)
 
 int main(void)
 {
-    numInfo a;
-    a.divident = 10;
-    a.divisor = 3;
-    a.iqut = 0;
-    a.rqut = 0;
+    numInfo a = {10, 3, 0, 0};
     mqr(&a);
     printf("%d\n", a.iqut);
     printf("%f\n", a.rqut);
