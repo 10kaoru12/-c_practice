@@ -21,7 +21,7 @@ int isLargerInWeight(Person *p, Person *q)
 }
 int isLargerInBMI(Person *p, Person *q)
 {
-    if (p->weight / p->height * p->height > q->weight / q->height * q->height)
+    if (p->weight / (p->height * p->height) > q->weight / (q->height * q->height))
         return 1;
     else
         return 0;
